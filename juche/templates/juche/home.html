@@ -1,0 +1,36 @@
+{% extends "juche/juche_base.html" %}
+{% load static %}
+{% block body_block %}
+
+    <form>
+    <h1>Viva a Coreia Popular!</h1>
+
+    <h3>Um site para homenagear a coragem de um povo contra as
+        injustiças operadas pela maior potência bélica e outras figuras pertencentes ao lixo da história.</h3>
+
+    <p> A luta revolucionária da República Popular Democrática da Coreia (RPDC ou Coreia Popular) continua ainda hoje
+        desconhecida para a maioria da população mundial. Isso se deve principalmente à guerra ideológica de propaganda
+        política perpretada pelos meios hegemônicos dos EUA e países da Europa Ocidental, mas por segmentos progressistas. Esses ataques visam
+        ridicularizar e diminuir a importância dessa revolução. Além de esconder os crimes bárbaros cometidos por aqueles
+        que tentam sufocar o direito dos povos à sua autonomia.
+    </p>
+
+    <p> Apesar das frequentes previsões do colapso do regime, a Coreia Popular continua de pé! O povo coreano e sua
+        história são uma inspiração para a busca de uma sociedade mais justa e livre (realmente livre), o completo
+        oposto aos antivalores niilistas da contemporanedade ocidental.
+    </p>
+
+    <p> Para saber mais sobre essa luta, que continua até os dias de hoje, clique nos links abaixo:  </p>
+
+    <ul>
+        <li><a href="{% url 'juche:historia' %}">História</a></li>
+        <li><a href="{% url 'juche:zuche' %}">Zuche</a></li>
+        <li><a href="{% url 'juche:songun' %}">Songun</a></li>
+        <li><a href="{% url 'juche:byungjin' %}">Byungjin</a></li>
+        <li><a href="{% url 'juche:mais' %}">Saiba Mais</a></li>
+    </ul>
+
+    <img class="KIS" src="https://images.wsj.net/im-238979?width=620&size=1.5"  alt = "Image not found">
+    </form>
+
+{% endblock %}

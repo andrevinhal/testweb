@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Viva a Coreia Popular!</title>
+    <link rel="stylesheet" href = "{% static "styles.css" %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="module">
+<table class = "tt">
+    <thead>
+    <th><a href="{% url 'juche:home' %}">Viva RPDC!</a></th>
+    <th><a href="{% url 'juche:historia' %}">História</a></th>
+    <th><a href="{% url 'juche:zuche' %}">Zuche</a></th>
+    <th><a href="{% url 'juche:songun' %}">Songun</a></th>
+    <th><a href="{% url 'juche:byungjin' %}">Byungjin</a></th>
+    <th><a href="{% url 'juche:mais' %}">Saiba Mais</a></th>
+    </thead>
+</table>
+
+    {% block body_block %}
+    {% endblock %}
+</div>
+</body>
+</html>
