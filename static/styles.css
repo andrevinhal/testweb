@@ -3,9 +3,9 @@ body{
     font-family: Arial;
     color: black;
     background-color: rgb(237,28,39);
-    padding:25%;
+    padding:10%;
     padding-top:0px;
-    padding-bottom:10px;
+    padding-bottom:0px;
     border: 50px solid rgb(2,79,162);
     border-top: 0px;
     content-color: white;
@@ -22,7 +22,7 @@ body{
   top: -15px;
   left: -15px;
   right: -15px;
-  bottom: -15px;
+  bottom: -100px;
   background: red;
   z-index: -1;
 }
